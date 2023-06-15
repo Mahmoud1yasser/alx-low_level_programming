@@ -6,7 +6,6 @@
 /**
  * main - Entry point
  * Description: print without printf,puts'
- * @int: describe the parameter int ,str
  * Return: Always 0 (Success)
  */
 int main(void)
