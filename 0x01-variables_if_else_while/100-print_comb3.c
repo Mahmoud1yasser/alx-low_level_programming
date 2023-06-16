@@ -18,22 +18,23 @@ int main(void)
 			{
 				putchar(i);
 				putchar(j);
-				if (i < 57 && j < 57)
+				if (i == 57 && j == 56)
+				{
+					j++;
+				}
+				else
 				{
 					putchar (44);
 					putchar (32);
 				}
-				else
-				{
-					j++;
-				}
+				j++;
 			}
-			else 
+			else
 			{
 				j++;
 			}
-		i++;
 		}
+		i++;
 	}
 	putchar(10);
 	return (0);
