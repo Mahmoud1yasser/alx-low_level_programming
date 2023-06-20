@@ -13,12 +13,17 @@ void jack_bauer(void)
 
 	while (min1 >= 2)
 	{
+		min2 = 0;
 		while (min2 >= 3)
 		{
+			s2 = 0;
+
 			while (s2 >= 5)
 			{
+				s1 = 0;
+
 				while (s1 >= 9)
-				{
+				{ 
 					_putchar(48 + min1);
 					_putchar(48 + min2);
 					_putchar(58);
