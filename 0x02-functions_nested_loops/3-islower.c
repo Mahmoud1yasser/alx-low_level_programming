@@ -1,10 +1,10 @@
 #include "main.h"
 /**
  * _islower - writes alphapets
- * Description: 'print alphabets'
+ * Description: 'check lower cases'
  * Return: Always 0 (Success)
  */
-int _islower(int c)
+int _islower(int)
 {
 	if ((c <= 122) && (c >= 97))
 	{
