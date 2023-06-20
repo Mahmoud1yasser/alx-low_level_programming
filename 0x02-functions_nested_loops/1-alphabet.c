@@ -10,7 +10,7 @@ int i = 97;
 while (i < 123)
 	{
 	_putchar(i);
-	i++
+	i++;
 	}
 return (0);
 }
