@@ -5,7 +5,7 @@
  * @n: number
  * Return: Always 0 (Success)
  */
-void times_table(void);
+void times_table(void)
 {
 	int num1;
 	int num2;
@@ -27,6 +27,10 @@ void times_table(void);
 					_putchar(32);
 					_putchar(44);
 				}
+				else
+				{
+					_putchar(10);
+				}
 			}
 			else
 			{
@@ -37,6 +41,10 @@ void times_table(void);
 					_putchar(32);
 					_putchar(32);
 					_putchar(44);
+				}
+				else
+				{
+					_putchar(10);
 				}
 			}
 
