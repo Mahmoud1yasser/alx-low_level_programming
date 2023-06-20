@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - writes alphapets
  * Description: 'print alphabets'
  * Return: Always 0 (Success)
  */
@@ -12,6 +12,7 @@ while (i < 123)
 	_putchar(i);
 	i++;
 	}
+_putchar(10);
 }
 
 
