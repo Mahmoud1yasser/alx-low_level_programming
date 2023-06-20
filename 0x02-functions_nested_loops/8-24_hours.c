@@ -13,7 +13,7 @@ void jack_bauer(void)
 
 	while (min1 <= 2)
 	{
-		if (min < 2)
+		if (min2 < 2)
 		{
 			min2 = 0;
 
