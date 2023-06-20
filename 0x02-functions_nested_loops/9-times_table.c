@@ -11,7 +11,8 @@ void times_table(void)
 
 	while (num1 <= 9)
 	{
-		num2 = 0;
+		num2=0;
+
 		while (num2 <= 9)
 		{
 			int result = num1 * num2;
