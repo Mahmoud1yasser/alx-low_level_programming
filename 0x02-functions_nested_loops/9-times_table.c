@@ -18,7 +18,7 @@ void times_table(void)
 			int r1 = result % 10;
 			int r2 = result % 100;
 
-			if (result =< 9)
+			if (result <= 9)
 			{
 				_putchar(48 + result);
 				if (r1 != 9)
