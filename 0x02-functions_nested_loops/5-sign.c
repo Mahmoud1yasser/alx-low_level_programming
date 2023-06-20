@@ -5,7 +5,7 @@
  * @c: character checked
  * Return: Always 0 (Success)
  */
-int print_sign(int n)
+signed int print_sign(signed int n)
 {
 	if (n > 0)
 	{
