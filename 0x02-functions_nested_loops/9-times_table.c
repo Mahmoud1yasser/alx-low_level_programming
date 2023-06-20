@@ -14,6 +14,7 @@ void times_table(void)
 	{
 		num2 = 0;
 		while (num2 <= 9)
+		{
 			int result = num1 * num2;
 			int r1 = result % 10;
 			int r2 = result % 100;
@@ -50,5 +51,6 @@ void times_table(void)
 			num2++;
 			}
 		num1++;
+		}
 	}
 }
