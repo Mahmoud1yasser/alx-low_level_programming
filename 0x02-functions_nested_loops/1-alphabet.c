@@ -1,4 +1,4 @@
-
+#include "main.c"
 /**
  * main - Entry point
  * Description: 'print alphabets'
