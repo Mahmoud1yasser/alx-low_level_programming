@@ -4,7 +4,7 @@
  * Description: 'print alphabets'
  * Return: Always 0 (Success)
  */
-int print_alphabet(int c)
+int _islower(int c)
 {
 	if ((c <= 122) && (c >= 97))
 	{
