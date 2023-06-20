@@ -36,7 +36,7 @@ void jack_bauer(void)
 					s2++;
 				}
 				min2++;
-				if ( min1 == 2 && min2 > 3)
+				if (min1 == 2 && min2 > 3)
 				{
 					break;
 				}
