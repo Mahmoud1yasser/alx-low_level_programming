@@ -5,11 +5,11 @@
  * @c: character checked
  * Return: Always 0 (Success)
  */
-signed int print_sign(signed int n)
+signed double int print_sign(signed double int n)
 {
 	if (n > 0)
 	{
-		return (1);
+		return (+1);
 		_putchar(43);
 	}
 	else if (n == 0)
