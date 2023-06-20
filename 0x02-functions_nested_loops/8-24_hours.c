@@ -39,3 +39,4 @@ void jack_bauer(void)
 			}
 		min1++;
 	}
+}
