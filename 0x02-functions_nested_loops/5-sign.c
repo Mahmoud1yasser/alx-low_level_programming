@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- * iprint_sign - check sign
+ * print_sign - check sign
  * Description: 'return sign'
- * @c: character checked
+ * @n: character checker
  * Return: Always 0 (Success)
  */
 signed long int print_sign(signed long int n)
