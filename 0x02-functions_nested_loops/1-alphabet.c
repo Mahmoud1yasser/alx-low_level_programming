@@ -12,7 +12,6 @@ while (i < 123)
 	_putchar(i);
 	i++;
 	}
-return (0);
 }
 
 
