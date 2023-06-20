@@ -5,7 +5,7 @@
  * @n: character checker
  * Return: Always 0 (Success)
  */
-signed long int print_sign(signed long int n)
+int print_sign(signed int n)
 {
 	if (n > 0)
 	{
