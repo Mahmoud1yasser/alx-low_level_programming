@@ -30,6 +30,7 @@ void jack_bauer(void)
 					_putchar(58);
 					_putchar(48 + s2);
 					_putchar(48 + s1);
+					_putchar(10);
 					s1++;
 				}
 				s2++;
