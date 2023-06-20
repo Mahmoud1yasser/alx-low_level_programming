@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_alphabet - writes alphapets
+ * print_alphabet_x10 - writes alphapets 10 times
  * Description: 'print alphabets'
  * Return: Always 0 (Success)
  */
