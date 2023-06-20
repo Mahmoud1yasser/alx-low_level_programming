@@ -1,8 +1,11 @@
+#include "main.h"
+
 /**
  * main - Entry point
  * Description: print _putchar
  * Return: Always 0 (Success)
  */
+
 int main(void)
 {
 	_putchar(95);
