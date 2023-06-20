@@ -5,7 +5,7 @@
  * @c: character checked
  * Return: Always 0 (Success)
  */
-int _isalhpa(int c)
+int _isalpha(int c)
 {
 	if (((c <= 122) && (c >= 97)) || ((c <= 90) && (c >= 65)))
 	{
