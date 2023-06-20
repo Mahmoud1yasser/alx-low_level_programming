@@ -1,8 +1,7 @@
 #include "main.h"
 /**
- * print_last_digit - prints last digit
+ * times_table - 9 table
  * Description: 'printer'
- * @n: number
  * Return: Always 0 (Success)
  */
 void times_table(void)
@@ -19,7 +18,7 @@ void times_table(void)
 			int r1 = result % 10;
 			int r2 = result % 100;
 
-			if (result >= 9)
+			if (result =< 9)
 			{
 				_putchar(48 + result);
 				if (r1 != 9)
