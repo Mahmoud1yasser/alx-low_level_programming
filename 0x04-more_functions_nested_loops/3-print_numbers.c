@@ -3,7 +3,9 @@
 /**
  * print_numbers - print 0 to 9.
  * Description : ' testing character to be digit'
+ * Return : nothing
  */
+
 void print_numbers(void)
 {
 	int i = 48;
