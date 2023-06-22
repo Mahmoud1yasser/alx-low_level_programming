@@ -1,5 +1,4 @@
-#include<stdio.h>
-
+#include "main.h"
 /**
  * main - check the code.
  * Description : ' testing characrters to be lower case'
