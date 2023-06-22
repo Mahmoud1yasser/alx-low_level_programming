@@ -2,8 +2,8 @@
 
 /**
  * print_diagonal - diagonal
- * @n: line lenght
  * Description :'print line'
+ * @n: line lenght
  * Return : nothing
  */
 void print_diagonal(int n)
