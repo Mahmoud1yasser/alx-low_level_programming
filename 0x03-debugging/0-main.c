@@ -2,7 +2,6 @@
 
 /**
 * main - tests function that prints if integer is positive or negative
-* Description: 'test numbers'
 * Return: Always 0 (Sucess)
 */
 int main(void)
