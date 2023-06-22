@@ -1,10 +1,9 @@
 #include "main.h"
-
 /**
- * print_diagonal - diagonal
- * Description :'print line'
- * @n: line lenght
- * Return : nothing
+ * print_diagonal - Entry point
+ * Description: 'the program's description'
+ * @n: describe the parameter
+ * Return: Always 0 (Success)
  */
 void print_diagonal(int n)
 {
