@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isupper - check the code.
  * Description : ' testing characrters to be lower case'
  *@c: is character too investgate
  * Return: Always 0 or 1.
