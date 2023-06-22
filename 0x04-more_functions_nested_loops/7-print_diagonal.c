@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * print_line - printline with lenght
+ * print_diagonal - diagonal
  * @n: line lenght
  * Description :'print line'
  * Return : nothing
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	int i = 1;
 
@@ -15,7 +15,7 @@ void print_line(int n)
 		i++;
 		_putchar(32);
 	}
-	if (n <= 0)
+	if (n > 0)
 	{
 	_putchar(92);
 	}
