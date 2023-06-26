@@ -15,13 +15,12 @@ void rev_string(char *s)
 		i++;
 	}
 
-	i = (i - 1) / 2;
-	while (i >= 0)
+	i = (i - 1);
+	while (h < (i / 2))
 	{
 		temp = *(s + h);
-		*(s + h) = *(s + i);
-		*(s + i) = temp;
-		i--;
+		*(s + h) = *(s + i - h);
+		*(s + i - h) = temp;
 		h++;
 	}
 }
