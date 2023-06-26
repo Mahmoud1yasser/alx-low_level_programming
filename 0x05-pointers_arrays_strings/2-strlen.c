@@ -3,7 +3,7 @@
  * _strlen - length of sting
  * Description: 'return data'
  * @s: pointer for data.
- * Return : count of string characters
+ * Return: count of string characters
  */
 int _strlen(char *s)
 {
