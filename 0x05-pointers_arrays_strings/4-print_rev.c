@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev - reverse print
- * Description: 'print data in 
+ * Description:'print data in 
  * reverse order'
  * @s: pointer for data.
  */
@@ -13,6 +13,7 @@ void print_rev(char *s)
 	{
 		i++;
 	}
+	i = i - 1;
 	while (i >= 0)
 	{
 		_putchar(*(s + i));
