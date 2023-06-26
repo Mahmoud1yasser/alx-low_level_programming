@@ -14,12 +14,12 @@ void rev_string(char *s)
 	{
 		i++;
 	}
-
-	while (h <= (i / 2))
+	h = i - 1;
+	while (h >= (i / 2))
 	{
 		temp = *(s + h);
-		*(s + h) = *(s + i - 1 - h);
-		*(s + i - 1 - h) = temp;
-		h++;
+		*(s + h) = *(s + i - h - 1);
+		*(s + i - h - 1) = temp;
+		h--;
 	}
 }
