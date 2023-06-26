@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_array - prints arrays
  * Description: 'collect array data and 
@@ -6,22 +7,19 @@
  * @a: pointer for array data.
  * @n: number of array elements.
  */
-int print_array(int *a, int n)
+void print_array(int *a, int n)
 {
-	int i = 0;
 	int j;
-	
-	while (*(a + i) != 0)
+
+	for (j = 0; j < n; j++)
 	{
-		i++;
-	}
-	for (j = 0; j < i; j++)
-	{
-		_putchar(*(a +j));
-		if (j != i - 1)
+		if (j != n - 1)
 		{
-			_putchar(44);
-			_putchar(32);
+			printf("%d, ", *(a + j));
+		}
+		else
+		{
+			printf("%d\n", *(a + j));
 		}
 	}	
 
