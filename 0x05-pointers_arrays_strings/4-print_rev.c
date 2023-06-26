@@ -4,9 +4,8 @@
  * Description: 'print data in 
  * reverse order'
  * @s: pointer for data.
- * Return: count of string characters
  */
-int print_rev(char *s)
+void print_rev(char *s)
 {
 	int i = 0;
 
@@ -14,9 +13,10 @@ int print_rev(char *s)
 	{
 		i++;
 	}
-	for (i != 0; --i;)
+	while (i >= 0)
 	{
-		_putchar('*(s + i)');
+		_putchar(*(s + i));
+		i--;
 	}
 	_putchar(10);
 }
