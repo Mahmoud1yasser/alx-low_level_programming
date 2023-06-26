@@ -1,8 +1,8 @@
 #include "main.h"
 /**
- *_strcpy - copy string
+ * _strcpy - copy string
  *@dest: destenation 
- @src: main 
+ *@src: main string
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -12,5 +12,5 @@ char *_strcpy(char *dest, char *src)
 		*p++ = *src++;
 	}
 	*p = '\0';
-	return dest;	
+	return dest;
 }
