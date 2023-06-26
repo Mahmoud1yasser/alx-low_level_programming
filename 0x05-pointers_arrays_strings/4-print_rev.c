@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * print_rev - reverse print
- * Description:'print data in 
+ * Description:'print data in
  * reverse order'
  * @s: pointer for data.
  */
