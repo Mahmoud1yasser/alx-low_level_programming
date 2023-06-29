@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
- * leet - encoder.
- * Description: cencode to 1337.
+ * *leet - encoder.
+ * Description: encodes to 1337.
  * @str: string to be changed
  * Return: pointer to sting dest.
  */
