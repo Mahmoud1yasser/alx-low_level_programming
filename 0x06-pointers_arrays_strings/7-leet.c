@@ -8,19 +8,18 @@
 char *leet(char *str)
 {
 	int j;
+	int i;
+	char lower[] = {'a', 'e', 'o', 't', 'l'};
+	char upper[] = {'A', 'E', 'O', 'T', 'L'};
+	char i1337[] = {52, 51, 48, 55, 49};
 
 	for (j = 0; str[j] != '\0'; j++)
 	{
-		if (str[j] == 'a' || str[j] == 'A') {
-			str[j] = '4'; }
-		else if (str[j] == 'e' || str[j] == 'E') {
-			str[j] = '3'; }
-		else if (str[j] == 'o' || str [j] =='O') {
-			str[j] = '0'; }
-		else if (str[j] == 't' || str[j] == 'T') {
-			str[j] = '7'; }
-		else if (str[j] == 'l' || str[j] == 'L') {
-			str[j] = '1'; }
+		for (i = 0; i < 4; i++)
+			if (str[j] == lower [i] || str[j] == upper [i])
+			{
+				str[j] = i1337[i];
+			}
 	}
 	return (str);
 }
