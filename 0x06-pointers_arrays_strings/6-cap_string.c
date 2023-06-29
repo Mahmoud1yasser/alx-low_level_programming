@@ -3,27 +3,27 @@
  * *cap_string - manupilate.
  * description: change lower to
  * upper case.
- * @letter: to be changed.
- * Return: changed letter.
+ * @str: to be changed.
+ * Return: changed text.
  */
-char *cap_string(char *letter)
+char *cap_string(char *str)
 {
 	int i;
 	int j;
 	int a[] = {32, 9, 10, 44, 59, 46, 33, 40, 41, 63, 123, 125, 34};
 
-	for (i = 0; *(letter + i) != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		for (j = 0; a[j] != '\0'; j++)
+		for (j = 0; j < 13; j++)
 		{
-			if (*(letter + i) == a[j])
+			if (str[i] == a[j])
 			{
-				if (*(letter + i + 1) > 96 && *(letter + i + 1) < 123)
+				if (str[i + 1] > 96 && str[i + 1] < 123)
 				{
-					*(letter + i + 1) = *(letter + i + 1) - 32;
+					str[i + 1] -= 32;
 				}
 			}
 		}
 	}
-	return (letter);
+	return (str);
 }
