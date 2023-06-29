@@ -1,7 +1,8 @@
 #include "main.h"
+
 /**
- * leet - encoder.
- * Description: cencode to 1337.
+ * *leet - encoder.
+ * Description: encodes to 1337.
  * @str: string to be changed
  * Return: pointer to sting dest.
  */
@@ -15,7 +16,7 @@ char *leet(char *str)
 
 	for (j = 0; str[j] != '\0'; j++)
 	{
-		for (i = 0; i < 4; i++)
+		for (i = 0; i <= 4; i++)
 			if (str[j] == lower[i] || str[j] == upper[i])
 			{
 				str[j] = i1337[i];
