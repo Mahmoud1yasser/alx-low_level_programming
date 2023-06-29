@@ -7,7 +7,7 @@
  * Return: changed text.
  */
 char *cap_string(char *str)
-{i
+{
 	int i;
 
 	for (i = 0; str[i] != '\0'; i++)
