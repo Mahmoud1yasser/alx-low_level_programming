@@ -19,7 +19,7 @@ char *cap_string(char *str)
 		{
 			if (str[i] > 96 && str[i] < 123)
 			{
-			 	str[i] -= 32;
+				str[i] -= 32;
 			}
 		}
 		for (j = 0; j < 14; j++)
