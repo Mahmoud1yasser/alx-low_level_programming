@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *string_toupper - manupilate.
+ * *cap_string - manupilate.
  * description: change lower to
  * upper case.
  * @letter: to be changed.
@@ -13,8 +13,8 @@ char *cap_string(char *letter)
 	int a[] = {32, 9, 10, 44, 59, 46, 33, 40, 41, 63, 123, 125, 34};
 
 	for (i = 0; *(letter + i) != '\0'; i++)
-	{ 
-		for ( j = 0; a[j] != '\0'; j++)
+	{
+		for (j = 0; a[j] != '\0'; j++)
 		{
 			if (*(letter + i) == a[j])
 			{
