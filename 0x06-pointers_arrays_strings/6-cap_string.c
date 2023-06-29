@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * *cap_string - manupilate.
+ * cap_string - manupilate.
  * description: change lower to
  * upper case.
  * @str: to be changed.
