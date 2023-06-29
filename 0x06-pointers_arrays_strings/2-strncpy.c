@@ -6,7 +6,7 @@
  * @dest: destenation string
  * @src: string to be added
  * @n: number of bytes
- * Return : pointer to sting dest.
+ * Return: pointer to sting dest.
  */
 char *_strncpy(char *dest, char *src, int n)
 {

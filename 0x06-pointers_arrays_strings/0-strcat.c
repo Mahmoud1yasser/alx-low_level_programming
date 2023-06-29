@@ -4,7 +4,7 @@
  * description: concatenate two strings
  * @dest: destenation string
  * @src: string to be added
- * Return : pointer to sting dest.
+ * Return: pointer to sting dest.
  */
 char *_strcat(char *dest, char *src)
 {
