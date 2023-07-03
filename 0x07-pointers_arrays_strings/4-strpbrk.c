@@ -9,26 +9,25 @@
  */
 char *_strpbrk(char *s, char *accept)
 {
-	int found;
-	int j = 0;
-	const char *ss = s;
-	const char *a = accept
+	int i;
+	int j;
 
-	for (; *ss != '\0'; ss++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
-		for (; *a != '\0'; a++)
+
+		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			if (*ss == *a)
+			if (*(s + i) == *(accept + j))
 				{
-					found = 1;
-					break;
+					return (s + i);
+					goto here;
 				}
 		}
-		if (found == 1)
-		{
-			break;
-		}
-		j++;
 	}
-	return (s + j);
+		here:
+		if (*s == *accept)
+		{
+			return (s + i);
+		}
+return (NULL);
 }
