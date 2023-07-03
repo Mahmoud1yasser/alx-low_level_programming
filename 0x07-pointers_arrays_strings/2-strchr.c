@@ -6,7 +6,7 @@
  * character'
  * @s: data to search in.
  * @c: character to search for
- * Return: Always str (Success)
+ * Return: Always s (Success)
  */
 char *_strchr(char *s, char c)
 {
@@ -19,7 +19,7 @@ char *_strchr(char *s, char c)
 			return (s + i);
 		}
 	}
-	if ( i > 0)
+	if (i > 0)
 	{
 		s = NULL;
 	}
