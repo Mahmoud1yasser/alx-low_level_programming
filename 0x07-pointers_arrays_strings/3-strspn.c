@@ -18,15 +18,15 @@ unsigned int _strspn(char *s, char *accept)
 		const char *q = accept;
 
 		found = 0;
-		for (; *q != '\0'; q++) 
+		for (; *q != '\0'; q++)
 		{
-			if (*p == *q) 
+			if (*p == *q)
 			{
 				found = 1;
 				break;
 			}
 		}
-		if (!found) 
+		if (!found)
 		{
 			break;
 		}
