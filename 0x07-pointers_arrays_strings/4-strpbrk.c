@@ -5,7 +5,8 @@
  * Description: 'gets first match'
  * @s: destenation pointer.
  * @accept: values to compare with.
- * Return: Always dest (Success)
+ * Return: null if noot match
+ * pointer if (Success)
  */
 char *_strpbrk(char *s, char *accept)
 {
@@ -17,11 +18,9 @@ char *_strpbrk(char *s, char *accept)
 
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			if ((*(s + i)) ==
-					(*(accept + j)))
-				{
+			if ((*(s + i)) ==(*(accept + j))){
 					return (s + i);
-				}
+			}
 		}
 	}
 return (NULL);
