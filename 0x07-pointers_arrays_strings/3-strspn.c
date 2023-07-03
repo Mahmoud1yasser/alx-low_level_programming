@@ -10,18 +10,19 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	const char *p = s;
-	int found = 0;
-	int count = 1;
+	int count = 0;
 	const char *q = accept;
 
 	for (; *q !='\0'; q++)
 	{
+	int found = 0;
+
 		for (; *p != '\0'; p++)
 		{
 			if (*p == *q)
 			{
 				break;
-				found = 0;
+				found = 1;
 			}
 			count ++;
 		}
@@ -30,5 +31,5 @@ unsigned int _strspn(char *s, char *accept)
 			break;
 		}
 	}
-return (count);
+return (count + 1);
 }
