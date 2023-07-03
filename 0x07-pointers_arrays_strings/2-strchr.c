@@ -1,5 +1,4 @@
 #include "main.h"
-#define NULL ((void *)0)
 /**
  * _strchr - search character
  * Description: 'search for indecated
