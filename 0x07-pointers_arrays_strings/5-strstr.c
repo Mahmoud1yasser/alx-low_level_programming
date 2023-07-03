@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL ((void *)0)
 /**
  * _strstr - find string
  * Description: 'find first string match
@@ -9,42 +10,25 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	const char *h = haystack;
-	const char *n = needle;
-	int flag = 0;
-	int count = 0;
-
-	for (; *n != '\0'; n++)
+	if (*needle == '\0') 
 	{
-		const char *h = haystack;
+        return haystack;
+	}
+	while (*haystack != '\0') 
+	{
+		char *q =needle;
+		char *r = haystack;
 
-		for (; *h != '\0'; h++)
+		while (*q != '\0' && *q == *r)
 		{
-			if (flag = 0)
-			{
-				memo = i;
-			}
-			if (*h == *n)
-			{
-				if (*(h + 1) == *(n + 1) && n + 1 
-						!= '\0' && h + 1 != '\0')
-				{
-					flag = 1;
-					break;
-				}
-				else
-				{
-					flag = 0;
-					continue;
-				}
-
-				i++;
-			}
+			q++;
+			r++;
 		}
+		if (*q == '\0') 
+		{
+			return haystack;
+		}
+		haystack++;
 	}
-	if (flag)
-	{
-		return(h + i);
-	}
-	return (NULL);
+	return NULL;
 }
