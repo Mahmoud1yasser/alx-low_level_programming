@@ -10,26 +10,29 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	const char *p = s;
-	int count = 0;
-	const char *q = accept;
+	unsigned int count = 0;
+	int found;
 
-	for (; *p != '\0'; p++)
+	while (*p != '\0') 
 	{
-	int found = 0;
+		const char *q = accept;
 
-		for (; *q != '\0'; q++)
+		found = 0;
+		for (; *q != '\0'; q++) 
 		{
-			if (*p == *q)
+			if (*p == *q) 
 			{
 				found = 1;
 				break;
 			}
-			count++;
 		}
-		if (!found)
+		if (!found) 
 		{
 			break;
 		}
+		count++;
+		p++;
 	}
-return (count + 1);
+
+	return (count);
 }
