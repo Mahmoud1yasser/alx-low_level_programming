@@ -20,11 +20,10 @@ char *_strpbrk(char *s, char *accept)
 			if (*(s + i) == *(accept + j))
 				{
 					return (s + i);
-					goto here;
+					break;
 				}
 		}
 	}
-		here:
 		if (*s == *accept)
 		{
 			return (s + i);
