@@ -23,7 +23,7 @@ char *_strchr(char *s, char c)
 	}
 	if (!i && !found)
 	{
-		s = NULL;
+		s = '\0';
 	}
 	return (s);
 }
