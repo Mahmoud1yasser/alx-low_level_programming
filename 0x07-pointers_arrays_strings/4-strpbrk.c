@@ -17,14 +17,13 @@ char *_strpbrk(char *s, char *accept)
 
 		for (j = 0; *(accept + j) != '\0'; j++)
 		{
-			if (*(s + i) == *(accept + j))
+			if ((*(s + i)) == (*(accept + j)))
 				{
 					return (s + i);
-					goto here;
+					break;
 				}
 		}
 	}
-		here:
 		if (*s == *accept)
 		{
 			return (s + i);
