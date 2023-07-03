@@ -13,16 +13,16 @@ unsigned int _strspn(char *s, char *accept)
 	int count = 0;
 	const char *q = accept;
 
-	for (; *q != '\0'; q++)
+	for (; *p != '\0'; p++)
 	{
 	int found = 0;
 
-		for (; *p != '\0'; p++)
+		for (; *q != '\0'; q++)
 		{
 			if (*p == *q)
 			{
-				break;
 				found = 1;
+				break;
 			}
 			count++;
 		}
