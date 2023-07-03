@@ -1,4 +1,5 @@
 #include "main.h"
+#define NULL ((void *)0)
 /**
  * _strchr - search character
  * Description: 'search for indecated
@@ -22,7 +23,7 @@ char *_strchr(char *s, char c)
 	}
 	if (!i && !found)
 	{
-		s = '\0';
+		return (NULL);
 	}
 	return (s);
 }
