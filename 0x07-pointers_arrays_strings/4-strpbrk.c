@@ -11,12 +11,14 @@ char *_strpbrk(char *s, char *accept)
 {
 	int found;
 	int j = 0;
+	const char *ss = s;
+	const char *a = accept
 
-	for (; *s != '\0'; s++)
+	for (; *ss != '\0'; ss++)
 	{
-		for (; *accept != '\0'; accept++)
+		for (; *a != '\0'; a++)
 		{
-			if (*s == *accept)
+			if (*ss == *a)
 				{
 					found = 1;
 					break;
