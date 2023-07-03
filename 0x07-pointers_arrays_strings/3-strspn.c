@@ -4,7 +4,7 @@
  * Description: 'gets the lenght of a
  * prefix substring'
  * @s: destenation pointer.
- * @accept: values to compare with. 
+ * @accept: values to compare with.
  * Return: Always dest (Success)
  */
 unsigned int _strspn(char *s, char *accept)
@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int count = 0;
 	int found;
 
-	while (*p != '\0') 
+	while (*p != '\0')
 	{
 		const char *q = accept;
 
@@ -33,6 +33,5 @@ unsigned int _strspn(char *s, char *accept)
 		count++;
 		p++;
 	}
-
 	return (count);
 }
