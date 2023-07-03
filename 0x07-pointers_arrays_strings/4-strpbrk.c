@@ -10,14 +10,13 @@
 char *_strpbrk(char *s, char *accept)
 {
 	int found;
-	int i = 0;
 	int j = 0;
 
-	for (j = 0; *(s + j) != '\0'; j++)
+	for (; *s != '\0'; s++)
 	{
-		for (i = 0; *(accept + i) != '\0'; i++)
+		for (; *accept != '\0'; accept++)
 		{
-			if (*(s + j) == *(accept + i))
+			if (*s == *accept)
 				{
 					found = 1;
 					break;
@@ -27,6 +26,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			break;
 		}
+		j++;
 	}
 	return (s + j);
 }
