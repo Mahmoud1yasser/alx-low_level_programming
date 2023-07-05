@@ -21,10 +21,18 @@ int _sqrt_recursion(int n)
 		return (sqrt_helper(n, 1, n));
 	}
 }
+/**
+ * sqrt_helper - calculate natural
+ * square root'
+ * Description: 'calculate squrt'
+ * @n: number to get squrt for.
+ * @start: were calculation starts.
+ * @end: were calculation stop.
+ * Return: squrt
+ */
 int sqrt_helper(int n, int start, int end)
 {
 	int mid;
-	
 	if (end >= start)
 	{
 		mid = start + (end - start) / 2;
