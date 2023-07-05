@@ -33,9 +33,9 @@ int is_palindrome_helper(char *s, int start, int end)
 		return (1);
 	}
 	else if (s[start] != s[end])
-			{
-				return (0);
-			}
+	{
+		return (0);
+	}
 	else
 	{
 		return (is_palindrome_helper(s, start + 1, end - 1));
