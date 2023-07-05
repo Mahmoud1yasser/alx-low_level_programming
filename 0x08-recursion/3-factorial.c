@@ -1,16 +1,23 @@
 #include "main.h"
 /**
- * _puts_recursion - silimar to puts
+ * factorial - calculate factorials
  * Description: 'print string'
- * @s: character
+ * @n: number to get factorial.
+ * Return: factorial on n
  */
-void _puts_recursion(char *s)
+int factorial(int n)
 {
-	if (*s == '\0')
+	if (n > 0)
 	{
-		_putchar(10);
-		return;
+		factorial(n - 1);
 	}
-	_putchar(*s);
-	_puts_recursion(s + 1);
+	else if (n < 0)
+	{
+		return(-1);
+	}
+	else
+	{
+		return (1);
+	}
+	return (factorial(n - 1) * n);
 }
