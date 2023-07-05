@@ -1,5 +1,22 @@
 #include "main.h"
 /**
+ * _strlen_recursion - string lenght
+ * Description: 'return string lenght'
+ * @s: string pointer.
+ * Return: string length.
+ */
+int _strlen_recursion(char *s)
+{
+        if (*s != '\0')
+        {
+                return (_strlen_recursion(s + 1) + 1);
+        }
+        else
+        {
+        return (0);
+        }
+}
+/**
  * is_palindrome_helper - checker
  * Description: 'the program checks words
  * to be palindrom'
@@ -33,6 +50,6 @@ int is_palindrome_helper(char *s, int start, int end)
  */
 int is_palindrome(char *s)
 {
-	int len = strlen(s);
+	int len = _strlen_recursion(s);
 	return is_palindrome_helper(s, 0, len - 1);
 }
