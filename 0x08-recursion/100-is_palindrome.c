@@ -30,20 +30,19 @@ int is_palindrome_helper(char *s, int start, int end)
 {
 	if (start >= end)
 	{
-		return 1;
+		return (1);
 	}
 	else if (s[start] != s[end])
 			{
-				return 0;
+				return (0);
 			}
 	else
 	{
-		return is_palindrome_helper(s, start + 1, end - 1);
+		return (is_palindrome_helper(s, start + 1, end - 1));
 	}
 }
 /**
  * is_palindrome - Entry point
- * 
  * Description: 'recursive function'
  * @s: string
  * Return: status
@@ -51,5 +50,6 @@ int is_palindrome_helper(char *s, int start, int end)
 int is_palindrome(char *s)
 {
 	int len = _strlen_recursion(s);
-	return is_palindrome_helper(s, 0, len - 1);
+
+	return (is_palindrome_helper(s, 0, len - 1));
 }
