@@ -5,6 +5,7 @@
  * to the power of number.
  * @x: number.
  * @y: power number.
+ * Return: power.
  */
 int _pow_recursion(int x, int y)
 {
@@ -18,6 +19,6 @@ int _pow_recursion(int x, int y)
 	}
 	else
 	{
-		return(_pow_recursion(x, y - 1) * x);
+		return (_pow_recursion(x, y - 1) * x);
 	}
 }
