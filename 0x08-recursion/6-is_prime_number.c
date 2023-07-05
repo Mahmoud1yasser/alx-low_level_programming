@@ -1,11 +1,9 @@
 #include "main.h"
 /**
  * is_divisible - Entry point
- * 
  * Description: 'divider'
  * @n: number.
  * @i: number.
- * 
  * Return: upon condition (Success)
  */
 int is_divisible(int n, int i)
@@ -25,10 +23,8 @@ int is_divisible(int n, int i)
 }
 /**
  * is_prime_number - prime number check
- * 
  * Description: 'program checks if number is prime'
  * @n: number to be checked
- * 
  * Return: upon condition 0 (Success)
  */
 int is_prime_number(int n)
