@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * _puts_recursion - silimar to puts
- * Description: 'print string'
+ * _print_rev_recursion - silimar to puts
+ * Description: 'print string
+ * in reverse'
  * @s: character
  */
 void _print_rev_recursion(char *s)
@@ -12,5 +13,4 @@ void _print_rev_recursion(char *s)
 	}
 	_putchar(*s);
 		return;
-	_putchar(10);
 }
