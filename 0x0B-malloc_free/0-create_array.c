@@ -4,7 +4,7 @@
 /**
   * create_array - Entry
   *
-  * @size: int
+  * @size: integar
   *
   * @c: char
   *

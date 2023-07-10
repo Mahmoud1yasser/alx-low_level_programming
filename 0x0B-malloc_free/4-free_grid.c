@@ -4,7 +4,7 @@
 /**
   * free_grid - entry
   *
-  * @grid: int
+  * @grid: integar
   *
   * @height: int
   *

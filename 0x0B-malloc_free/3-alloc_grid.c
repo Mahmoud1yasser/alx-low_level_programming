@@ -4,7 +4,7 @@
 /**
   * alloc_grid - entry
   *
-  * @width: int
+  * @width: integar
   *
   * @height: int
   *

@@ -4,7 +4,7 @@
 /**
   * _strdup - Entery
   *
-  * @str: char
+  * @str: charater
   *
   * Return: char
 */

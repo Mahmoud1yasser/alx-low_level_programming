@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
-  * str_concat - Entry
+  * str_concat - Entry point
   *
   * @s1: char
   *
