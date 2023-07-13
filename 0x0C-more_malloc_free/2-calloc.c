@@ -4,7 +4,8 @@
 #include <string.h>
 
 /**
- * simple_print_buffer - prints buffer in hexa
+ * _calloc - memory allocate for
+ * array of elements.
  * @nmemb: array of elements.
  * @size: size of array
  *
