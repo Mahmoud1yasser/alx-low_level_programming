@@ -11,7 +11,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	char *prt = malloc(nmemb * size);
+	int *prt = (int *)malloc(nmemb * size);
 	unsigned int count;
 
 	if (nmemb == 0 || size == 0)
