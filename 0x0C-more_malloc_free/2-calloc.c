@@ -1,7 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _calloc - memory allocate for
@@ -12,7 +11,8 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	void *prt = malloc(nmemb * size);
+	char *prt = malloc(nmemb * size);
+	unsigned int count;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -22,6 +22,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 	return (NULL);
 	}
-	memset(prt, 0, nmemb * size);
+	count = 0;
+	while (count < nmemb * size)
+	{
+		prt[count] = 0;
+		count++;
+	}
 	return (prt);
 }
