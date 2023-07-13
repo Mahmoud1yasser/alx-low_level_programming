@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 /**
  * simple_print_buffer - prints buffer in hexa
@@ -21,6 +22,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 	return (NULL);
 	}
-	memset(ptr, 0, nmemb * size);
+	memset(prt, 0, nmemb * size);
 	return (prt);
 }
