@@ -8,7 +8,6 @@
  * array of elements.
  * @nmemb: array of elements.
  * @size: size of array
- *
  * Return: Nothing.
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
