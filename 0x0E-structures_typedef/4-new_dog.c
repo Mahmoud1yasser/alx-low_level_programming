@@ -10,9 +10,7 @@
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *newdog;
-	if (newdog != NULL)
-	{
+		dog_t *newdog;
 		newdog = malloc(sizeof(dog_t));
 		if (newdog == NULL)
 		{
@@ -38,7 +36,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 			return (NULL);
 		_strcpy(newdog->owner, owner);
 		return (newdog);
-	}
 }
 /**
  * _strlen - return length of a string
