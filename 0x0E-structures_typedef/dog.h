@@ -1,7 +1,5 @@
-#include <stdio.h>
-
 /**
- *dog - data structure.
+ *struct dog - data structure.
  *@name: dog name.
  *@age: dog age.
  *@owner: dog owner
