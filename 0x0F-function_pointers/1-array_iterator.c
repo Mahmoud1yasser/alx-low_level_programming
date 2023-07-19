@@ -5,6 +5,7 @@
  * of an array.
  * @array: pointer to element array
  * @action: pointer to function in use
+ * @size: size of array
  *
  * Return: Nothing.
  */
