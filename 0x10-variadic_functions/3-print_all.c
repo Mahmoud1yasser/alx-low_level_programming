@@ -9,7 +9,7 @@ void print_all(const char * const format, ...)
 {
 	va_list ap;
 	const char *p = format;
-	
+
 	va_start(ap, format);
 	while (*p != '\0')
 	{
@@ -23,7 +23,7 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				{
-					char *temp = va_arg(ap,char *);
+					char *temp = va_arg(ap, char *);
 					if (temp != NULL)
 					{
 						printf("%s ", temp);
