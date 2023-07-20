@@ -9,8 +9,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	int i;
 	unsigned int j = n;
-
 	va_list ap;
+
 	va_start(ap, n);
 	i = va_arg(ap, int);
 	for (; j > 0; j--)
