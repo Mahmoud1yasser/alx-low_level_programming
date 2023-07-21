@@ -5,7 +5,7 @@
 #include <stdlib.h>
 int _putchar(char c);
 /**
- * struct pter - pointer to print all
+ * struct types - pointer to print all
  * @z: pointer to input for test
  * @f: pointer to function
  */
