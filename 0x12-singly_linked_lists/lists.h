@@ -13,5 +13,4 @@ typedef struct node
 	struct node *next;
 }list_t;
 size_t print_list(const list_t *h);
-list_t *head = NULL;
 #endif
