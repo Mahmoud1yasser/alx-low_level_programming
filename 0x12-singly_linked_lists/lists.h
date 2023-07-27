@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * node - list of data
+ *  struct node - list of data
  */
 typedef struct node
 {
