@@ -2,7 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * print_list - function that prints lists
+ * list_len - function returns the number
+ * of elements in a linked
  * of data.
  * @h: pointer to head
  * Return: number of printed
