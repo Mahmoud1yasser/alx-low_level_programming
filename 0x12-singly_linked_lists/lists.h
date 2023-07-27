@@ -5,6 +5,9 @@
 #include <stdlib.h>
 /**
  *  struct node - list of data
+ *  @str: string to print
+ *  @len: lenghth of string
+ *  @next: pointer to next node
  */
 typedef struct node
 {
