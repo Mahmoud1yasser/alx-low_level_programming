@@ -1,24 +1,24 @@
-#include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
 #include "lists.h"
+
 /**
- * free_listint2 - function to free data in nodes
- * @head: first node
+ * free_listint2 - Free all nodes from a list, and set head to NULL
+ * @head: Pointer to the pointer to the start of the list
  */
 void free_listint2(listint_t **head)
 {
+	listint_t *killnode;
 	listint_t *current;
-	listint_t *p = *head;
 
 	if (head != NULL)
 	{
-		while (p != NULL)
+		current = *head;
+		while (current != NULL)
 		{
-			current = p;
-			p = p->next;
-			free(current);
+			killnode = current;
+			current = current->next;
+			free(killnode);
 		}
-	*head = NULL;
+		*head = NULL;
 	}
 }
