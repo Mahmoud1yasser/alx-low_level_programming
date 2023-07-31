@@ -36,13 +36,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 			find = find->next;
 			pos++;
 		}
-		if (idx == pos && *head == NULL)
+		if (idx == pos && find == NULL)
 		{
 			find->next = new;
 			return (new);
 		}
-		if (idx > pos)
-			return(NULL);
 	}
 	return (NULL);
 }
