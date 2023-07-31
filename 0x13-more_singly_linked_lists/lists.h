@@ -1,5 +1,5 @@
 #ifndef HEADER_H
-#define LISTS_H
+#define HEADER_H
 /**
  * struct listint_s - singly linked list
  * @n: integer
