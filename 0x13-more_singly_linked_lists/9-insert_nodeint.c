@@ -17,15 +17,14 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	if (new == NULL)
 		return (NULL);
 	new->n =  n;
-	if (head != NULL && *head != NULL)
+	if (head != NULL)
 	{
 		if (idx == 0)
 		{
-			new->next = *head;
-			*head = new;
+			new = add_nodeint(&find, n);
 			return (new);
 		}
-		while (*head != NULL)
+		while (find != NULL)
 		{
 			if (pos == idx)
 			{
@@ -38,9 +37,26 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		}
 		if (idx == pos && find == NULL)
 		{
-			find->next = new;
+			new = add_nodeint_end(&find, n);
 			return (new);
 		}
 	}
 	return (NULL);
+}
+/**
+ * add_nodeint - function insert node to beginning
+ * @head: pointer to pointer of node head
+ * @n: data in node
+ * Return: address of new element
+ */
+listint_t *add_nodeint(listint_t **head, const int n)
+{
+	listint_t *new = malloc(sizeof(listint_t));
+
+	if (new == NULL)
+		return (NULL);
+	new->n = n;
+	new->next = *head;
+	*head = new;
+	return (new);
 }
