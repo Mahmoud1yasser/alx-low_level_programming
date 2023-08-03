@@ -1,48 +1,46 @@
 #include "main.h"
 /**
- * _pow - calculates (base ^ power)
- * @base: base of the exponent
- * @power: power of the exponent
- *
- * Return: value of (base ^ power)
+ * print_binary - prints decimal as binary
+ * @n: long integer
  */
-unsigned long int _pow(unsigned int base, unsigned int power)
-{
-	unsigned long int num;
-	unsigned int i;
 
-	num = 1;
-	for (i = 1; i <= power; i++)
-		num *= base;
-	return (num);
-}
-
-/**
- * print_binary - prints a number in binary notation
- * @n: number to print
- *
- * Return: void
- */
 void print_binary(unsigned long int n)
 {
-	unsigned long int divisor, check;
-	char flag;
+	signed long int size;
+	char c;
+	int flag;
+
+	size = sizeof(n) * 8 - 1;
+
+	if (n == 0)
+	{
+		printf("0");
+		return;
+	}
+
+	if (n == 1)
+	{
+		printf("1");
+		return;
+	}
 
 	flag = 0;
-	divisor = _pow(2, sizeof(unsigned long int) * 8 - 1);
-	while (divisor != 0)
+
+	while (size >= 0)
 	{
-		check = n & divisor;
-		if (check == divisor)
+		c = (n >> size) & 1;
+
+		if (flag == 1)
+			putchar(c + '0');
+		else
 		{
-			flag = 1;
-			_putchar('1');
+			if (c == 1)
+			{
+				putchar(c + '0');
+				flag = 1;
+			}
 		}
-		else if (flag == 1 || divisor == 1)
-		{
-			_putchar('0');
-		}
-		divisor >>= 1;
+
+		size -= 1;
 	}
-	_putchar(10);
 }
