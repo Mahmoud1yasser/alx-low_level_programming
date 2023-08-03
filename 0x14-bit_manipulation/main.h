@@ -14,5 +14,5 @@
  */
 int _putchar(char c);
 unsigned int binary_to_uint(const char *b);
-void print_int(unsigned int num, unsigned int len);
+void print_binary(unsigned long int n);
 #endif
