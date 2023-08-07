@@ -1,4 +1,6 @@
-#include "main.h"
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
 
 /**
  * read_textfile - prints text from a file
@@ -42,4 +44,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 	return (length);
 }
-
