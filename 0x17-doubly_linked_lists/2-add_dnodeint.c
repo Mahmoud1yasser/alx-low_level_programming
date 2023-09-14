@@ -5,6 +5,7 @@
 /**
  * add_dnodeint - adds node to end of linked list
  * @head: pointer to list.
+ * @n: value to be added to new node
  * Return: number of node.
  * Description: doubly linked list node structure
  */
