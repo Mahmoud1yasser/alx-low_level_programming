@@ -1,51 +1,59 @@
 #include "lists.h"
 /**
-  * *insert_dnodeint_at_idx - Insert a new node into a doubly
-  * linked list at a given index
-  * @head: Double pointer to the start of the list
-  * @idx: Index to insert new node at
-  * @n: Value to assign to new node
-  * Return: Address of the new node, NULL if it fails
-  */
-dlistint_t *insert_dnodeint_at_idx(dlistint_t **head, unsigned int idx, int n)
-{
-	unsigned int pos;
-	dlistint_t *new_node, *current, *prev;
+ * insert_dnodeint_at_index - function to insert node at given index
+ * @h: double pointer type to head of list
+ * @idx: index at which node will be added
+ * @n: int type for data to be added
+ * Return: node if successful, NULL if failed
+ */
 
-	current = *head;
-	if (*head == NULL && idx != 0)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+{
+	dlistint_t *node = malloc(sizeof(dlistint_t));
+	dlistint_t *temp;
+	unsigned int count = 0;
+
+	if (node == NULL)
 		return (NULL);
-	new_node = malloc(sizeof(dlistint_t));
-	if (new_node == NULL)
-		return (NULL);
-	if (*head != NULL)
+	node->n = n;
+	node->prev = NULL;
+	node->next = NULL;
+
+	if (*h == NULL)
 	{
-		prev = NULL;
-		while (current->prev != NULL)
-			current = current->prev;
-		for (pos = 0; current != NULL && pos < idx; pos++)
-		{
-			prev = current;
-			current = current->next;
-		}
-		if (pos == idx)
-		{
-			new_node->n = n;
-			new_node->prev = prev;
-			if (current != NULL)
-				current->prev = new_node;
-			new_node->next = current;
-			if (idx != 0)
-				prev->next = new_node;
-			else
-				*head = new_node;
-			return (new_node);
-		}
-		return (NULL);
+		*h = node;
+		node->next = NULL;
+		return (node);
 	}
-	new_node->next = NULL;
-	new_node->prev = NULL;
-	new_node->n = n;
-	*head = new_node;
-	return (new_node);
+	temp = *h;
+	if (idx == 0)
+	{
+		node->next = temp;
+		temp->prev = node;
+		*h = node;
+		return (node);
+	}
+
+	while (count != (idx - 1))
+	{
+		temp = temp->next;
+		count++;
+		if (temp == NULL)
+		{
+			free(node);
+			return (NULL);
+		}
+	}
+	node->next = temp->next;
+	node->prev = temp;
+	if (temp->next == NULL)
+	{
+		temp->next = node;
+	}
+	else
+	{
+		temp->next->prev = node;
+		temp->next = node;
+	}
+	return (node);
 }
