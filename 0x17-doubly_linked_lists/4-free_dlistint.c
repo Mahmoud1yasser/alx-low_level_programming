@@ -5,18 +5,14 @@
   */
 void free_dlistint(dlistint_t *head)
 {
-	dlistint_t *kill_node;
+	dlistint_t *temp;
 
-	if (head != NULL)
+	if (head == NULL)
+		return;
+	while (head != NULL)
 	{
-		while (head->prev != NULL)
-			head = head->prev;
-		while (head != NULL)
-		{
-			kill_node = head;
-			head = head->next;
-			free(kill_node);
-		}
+		temp = head;
+		head = head->next;
+		free(temp);
 	}
-}
 }
