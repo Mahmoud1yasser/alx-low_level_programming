@@ -10,16 +10,19 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	int i;
+	size_t elements;
 
-	for (i = 0; h->prev != NULL && h != NULL; i++)
+	elements = 0;
+	if (h != NULL)
 	{
-		h = h->prev;
+		while (h->prev != NULL)
+			h = h->prev;
+		while (h != NULL)
+		{
+			printf("%d\n", h->n);
+			elements++;
+			h = h->next;
+		}
 	}
-	for (i = 0; h != NULL; i++)
-	{
-		printf("%d\n", h->n);
-		h = h->next;
-	}
-	return (i);
+	return (elements);
 }
