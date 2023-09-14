@@ -33,7 +33,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		*h = node;
 		return (node);
 	}
-
+	cont;
+	return (node);
+}
+/**
+ * cont - check the code
+ */
+void cont(void)
+{
 	while (count != (idx - 1))
 	{
 		temp = temp->next;
@@ -55,5 +62,4 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 		temp->next->prev = node;
 		temp->next = node;
 	}
-	return (node);
 }
