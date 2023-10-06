@@ -13,12 +13,15 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	if (size == 0)
 		return (NULL);
-	item = (hash_table_t *) malloc(sizeof(hash_table_t));
+	item = malloc(sizeof(hash_table_t));
 	if (item == NULL)
 		return (NULL);
-	item->size = (unsigned long int) malloc(sizeof(size) + 1);
+	item->size = malloc(sizeof(size) + 1);
 	if (item->size == '\0')
+	{
+		free(item);
 		return (NULL);
+	}
 	item->size = size;
 	return (item);
 }
