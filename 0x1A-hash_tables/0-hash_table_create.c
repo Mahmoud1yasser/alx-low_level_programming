@@ -9,14 +9,16 @@
  */
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	if size == NULL or size == 0
+	hash_table_t *item;
+
+	if(size == 0)
 		return (NULL);
-	hash_table_t *array = (hash_table_t *) malloc(sizeof(hash_table_t));
-	if array == NULL
+	item = (hash_table_t *) malloc(sizeof(hash_table_t));
+	if(item == NULL)
 		return (NULL);
-	array->size = (unsigned long int *) malloc(sizeof(size) + 1);
-	if size == NULL
+	item->size = (unsigned long int) malloc(sizeof(size) + 1);
+	if(item->size == '\0')
 		return (NULL);
-	array->size = size;
-	return (array);
+	item->size = size;
+	return (item);
 }
