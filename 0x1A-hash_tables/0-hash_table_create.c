@@ -11,13 +11,13 @@ hash_table_t *hash_table_create(unsigned long int size)
 {
 	hash_table_t *item;
 
-	if(size == 0)
+	if (size == 0)
 		return (NULL);
 	item = (hash_table_t *) malloc(sizeof(hash_table_t));
-	if(item == NULL)
+	if (item == NULL)
 		return (NULL);
 	item->size = (unsigned long int) malloc(sizeof(size) + 1);
-	if(item->size == '\0')
+	if (item->size == '\0')
 		return (NULL);
 	item->size = size;
 	return (item);
