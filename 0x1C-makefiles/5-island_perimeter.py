@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 '''function  returns the perimeter of the island described in grid'''
+
+
 def island_perimeter(grid):
     ''' function returns perimter of island'''
     p = 0
@@ -14,4 +16,4 @@ def island_perimeter(grid):
                     p += 1
                 if y - 1 == -1 or grid[x][y - 1] == 0:
                     p += 1
-    return(p)
+    return (p)
